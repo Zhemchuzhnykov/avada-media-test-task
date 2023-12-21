@@ -1,0 +1,15 @@
+{
+  "name": "watch-retailer-landing-page",
+  "version": "1.0.0",
+  "description": "My landing page for a watch retailer using HTML, CSS, JS, SCSS, Bootstrap, and Swiper",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "sass src/styles/main.scss src/main.css -w",
+    "build": "sass src/styles/main.scss src/main.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "swiper": "^8.4.5",
+    "sass": "^1.54.4"
+  }
+}
