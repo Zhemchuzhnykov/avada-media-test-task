@@ -4,10 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Watches retailer's landing page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link href="./src/main.css" rel="stylesheet" />
   </head>
   <body class="p-8">
-    <div id="root"></div>
+    <!-- Header -->
+    <header class="header">
+      <!-- Header top line -->
+      <div class="header-top">
+        <div class="header-top__section header-top__section_shop-info">
+          <div class="header-top__section-item">
+            <img
+              class="header-top__section-item_icon"
+              src="public/icons/eva_phone-outline.svg"
+              alt="Telephone icon"
+            />
+            <span class="header-top__section-item_text">8 (812) 123-45-67</span>
+          </div>
+          <span class="header-top__section-item">|</span>
+          <div class="header-top__section-item">
+            <span class="header-top__section-item_text"
+              >Працюємо 7 днів на тиждень</span
+            >
+          </div>
+          <span class="header-top__section-item">|</span>
+          <div class="header-top__section-item">
+            <span class="header-top__section-item_text">9:00 - 18:00</span>
+          </div>
+        </div>
+        <div class="header-top__section header-top__section_sign-in">
+          <div class="header-top__section-item">
+            <img
+              class="header-top__section-item_icon"
+              src="public/icons/ic_sharp-log-in.svg"
+              alt="Door icon"
+            />
+            <span class="header-top__section-item_text">Вхід / реєстрація</span>
+          </div>
+        </div>
+      </div>
+    </header>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

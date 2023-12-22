@@ -1,0 +1,32 @@
+.header-top {
+  height: 44px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__section {
+    display: flex;
+
+    &_shop-info {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &-item {
+      font-weight: 400;
+      size: 12px;
+      line-height: 15.53px;
+      color: #969696;
+      margin-right: 10px;
+      position: relative;
+
+      &_icon {
+        margin: 0px 10px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
