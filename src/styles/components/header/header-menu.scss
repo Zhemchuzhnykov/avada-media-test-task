@@ -1,0 +1,58 @@
+.header-menu {
+  height: 80px;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__brand-name {
+    width: 104px;
+    height: 49px;
+    font-family: "Post No Bills Jaffna";
+    font-size: 36px;
+    line-height: 53.82px;
+    color: #ffffff;
+  }
+
+  &__menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      height: 100%;
+
+      &-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+
+        &.highlighted {
+          background-color: #1f1f1f;
+        }
+
+        & > a {
+          color: #969696;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18.12px;
+          text-decoration: none;
+          cursor: pointer;
+
+          &.highlighted {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    &-icon {
+      margin: 0px 10px;
+    }
+  }
+}

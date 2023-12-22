@@ -3,3 +3,10 @@
 body {
   font-family: "PT Sans", sans-serif;
 }
+
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  src: url("../public/fonts/post-no-bill-jaffna/PostNoBillsJaffna-SemiBold.ttf")
+    format("truetype");
+  font-weight: 700;
+}
