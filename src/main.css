@@ -4,11 +4,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  max-width: 1920px;
 }
 .header-top__section {
   display: flex;
 }
-@media (max-width: 767px) {
+@media (width < 768px) {
   .header-top__section_shop-info {
     display: none;
   }
@@ -29,6 +31,8 @@
 
 .header-menu {
   height: 80px;
+  width: 100%;
+  max-width: 1920px;
   background-color: #0f0f0f;
   display: flex;
   justify-content: space-around;
@@ -47,6 +51,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (width < 768px) {
+  .header-menu__menu {
+    display: none;
+  }
 }
 .header-menu__menu-list {
   list-style-type: none;
@@ -77,9 +86,83 @@
 .header-menu__menu-icon {
   margin: 0px 10px;
 }
+.header-menu__mobile-menu {
+  display: none;
+}
+@media (width < 768px) {
+  .header-menu__mobile-menu {
+    display: block;
+  }
+}
+
+.main-banner {
+  position: relative;
+}
+.main-banner__image {
+  width: 100%;
+  max-width: 1920px;
+}
+.main-banner__logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 18vw;
+  max-width: 320px;
+}
+.main-banner__text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 38%;
+  max-width: 730px;
+  height: auto;
+  text-transform: uppercase;
+  margin: 0;
+}
+@media (width < 1920px) {
+  .main-banner__text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (width < 1440px) {
+  .main-banner__text {
+    font-size: 8px;
+    line-height: 16px;
+  }
+}
+@media (width < 1024px) {
+  .main-banner__text {
+    font-size: 6px;
+    line-height: 12px;
+  }
+}
+@media (width < 768px) {
+  .main-banner__text {
+    display: none;
+  }
+}
+.main-banner__text_mobile {
+  display: none;
+}
+@media (width < 768px) {
+  .main-banner__text_mobile {
+    display: block;
+  }
+}
 
 body {
   font-family: "PT Sans", sans-serif;
+  max-width: 1920px;
 }
 
 @font-face {

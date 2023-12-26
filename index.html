@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
       rel="stylesheet"
     />
@@ -55,6 +59,7 @@
       <!-- Header menu -->
       <div class="header-menu">
         <span class="header-menu__brand-name">PORTEN</span>
+        <!-- Desktop and tablet header menu -->
         <div class="header-menu__menu">
           <ul class="header-menu__menu-list">
             <li class="header-menu__menu-list-item">
@@ -78,8 +83,50 @@
             alt="Cart icon"
           />
         </div>
+        <!-- Mobile header menu -->
+        <div class="dropdown header-menu__mobile-menu" data-bs-theme="dark">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButtonDark"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Меню
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
+            <li><a class="dropdown-item active" href="#">СПОДОБАЛОСЬ</a></li>
+            <li><a class="dropdown-item" href="#">ОСОБИСТИЙ КАБІНЕТ</a></li>
+            <li><a class="dropdown-item" href="#">НАЛАШТУВАННЯ</a></li>
+          </ul>
+        </div>
       </div>
     </header>
+
+    <!-- Main banner -->
+    <main class="main-banner">
+      <img
+        class="main-banner__image"
+        src="public/banners/main-banner.svg"
+        alt="Banner with a man in a suit"
+      />
+      <img
+        class="main-banner__logo"
+        src="public/logos/logo.svg"
+        alt="Brand logo"
+      />
+      <p class="main-banner__text">
+        В магазинах Торговельній мережі Porten ви можете купити годинник у
+        Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську, Києві,
+        Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві, Рівному,
+        Слов'янську, Сумах, Тернополі, Харкові, Херсоні, Хмельницькому,
+        Черкасах, Чернівцях, Чернігові , а також багатьох інших містах України
+      </p>
+      <p class="main-banner__text main-banner__text_mobile">
+        В магазинах Торговельній мережі Porten ви можете купити годинник у
+        багатьох інших містах України
+      </p>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

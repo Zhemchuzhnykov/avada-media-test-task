@@ -1,5 +1,7 @@
 .header-menu {
   height: 80px;
+  width: 100%;
+  max-width: 1920px;
   background-color: #0f0f0f;
   display: flex;
   justify-content: space-around;
@@ -19,6 +21,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (width < 768px) {
+      display: none;
+    }
 
     &-list {
       list-style-type: none;
@@ -53,6 +59,14 @@
 
     &-icon {
       margin: 0px 10px;
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+
+    @media (width < 768px) {
+      display: block;
     }
   }
 }

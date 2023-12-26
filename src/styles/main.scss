@@ -1,7 +1,9 @@
 @import "./components/header/header.scss";
+@import "./components/main-section/main-section.scss";
 
 body {
   font-family: "PT Sans", sans-serif;
+  max-width: 1920px;
 }
 
 @font-face {
