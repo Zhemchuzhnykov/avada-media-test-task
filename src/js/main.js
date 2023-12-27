@@ -1,7 +1,5 @@
 "use strict";
 
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-
 /**
  * Changes the background of a menu item
  * and changes the text color
