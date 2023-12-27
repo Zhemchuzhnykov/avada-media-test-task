@@ -8,14 +8,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link href="./src/main.css" rel="stylesheet" />
@@ -103,29 +107,75 @@
       </div>
     </header>
 
-    <!-- Main banner -->
-    <main class="main-banner">
-      <img
-        class="main-banner__image"
-        src="public/banners/main-banner.svg"
-        alt="Banner with a man in a suit"
-      />
-      <img
-        class="main-banner__logo"
-        src="public/logos/logo.svg"
-        alt="Brand logo"
-      />
-      <p class="main-banner__text">
-        В магазинах Торговельній мережі Porten ви можете купити годинник у
-        Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську, Києві,
-        Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві, Рівному,
-        Слов'янську, Сумах, Тернополі, Харкові, Херсоні, Хмельницькому,
-        Черкасах, Чернівцях, Чернігові , а також багатьох інших містах України
-      </p>
-      <p class="main-banner__text main-banner__text_mobile">
-        В магазинах Торговельній мережі Porten ви можете купити годинник у
-        багатьох інших містах України
-      </p>
+    <!-- Main section -->
+    <main>
+      <!-- Main banner -->
+      <section class="main-banner">
+        <img
+          class="main-banner__image"
+          src="public/banners/main-banner.svg"
+          alt="Banner with a man in a suit"
+        />
+        <img
+          class="main-banner__logo"
+          src="public/logos/logo.svg"
+          alt="Brand logo"
+        />
+        <p class="main-banner__text">
+          В магазинах Торговельній мережі Porten ви можете купити годинник у
+          Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську,
+          Києві, Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві,
+          Рівному, Слов'янську, Сумах, Тернополі, Харкові, Херсоні,
+          Хмельницькому, Черкасах, Чернівцях, Чернігові , а також багатьох інших
+          містах України
+        </p>
+        <p class="main-banner__text main-banner__text_mobile">
+          В магазинах Торговельній мережі Porten ви можете купити годинник у
+          багатьох інших містах України
+        </p>
+      </section>
+
+      <!-- Section of collections -->
+      <section class="collections">
+        <div class="collection-21-22">
+          <h3 class="collection-21-22__title">СЕЗОН 20/21</h3>
+          <div class="collection-21-22__watches">
+            <div class="collection-21-22__watches_brown watch">
+              <div class="watch__image-container">
+                <img
+                  class="watch__image"
+                  src="public/watches/collection-21-22-brown.svg"
+                  alt="A brown watch from the collection 21/22"
+                />
+              </div>
+              <span class="watch__name">Louis XVI ATHOS</span>
+              <span class="watch__price">13 600 грн.</span>
+            </div>
+            <div class="collection-21-22__watches_blue watch">
+              <div class="watch__image-container">
+                <img
+                  class="watch__image"
+                  src="public/watches/collection-21-22-blue.svg"
+                  alt="A blue watch from the collection 21/22"
+                />
+              </div>
+              <span class="watch__name">Carl von Zeyten</span>
+              <span class="watch__price">16 500 грн.</span>
+            </div>
+            <div class="collection-21-22__watches_golden watch">
+              <div class="watch__image-container">
+                <img
+                  class="watch__image"
+                  src="public/watches/collection-21-22-golden.svg"
+                  alt="A golden watch from the collection 21/22"
+                />
+              </div>
+              <span class="watch__name">Carl von Zeyten</span>
+              <span class="watch__price">65 000 грн.</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
