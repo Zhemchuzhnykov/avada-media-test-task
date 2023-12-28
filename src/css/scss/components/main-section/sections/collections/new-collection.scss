@@ -1,0 +1,53 @@
+.new-collection {
+  width: 46.7%;
+  align-items: start;
+  background-color: #000000;
+
+  & > div {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  &__image {
+    @media (width < 1920px) {
+      max-width: 880px;
+    }
+
+    @media (width < 1440px) {
+      max-width: 672px;
+    }
+
+    @media (width < 1024px) {
+      max-width: 488px;
+    }
+  }
+  &__title {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    padding-bottom: calc(4vh - 1px);
+    margin-bottom: calc(4vh - 1px);
+
+    @media (width < 1440px) {
+      font-size: 25px;
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (width > 1440px) {
+      bottom: 13%;
+    }
+
+    @media (width < 1024px) {
+      bottom: 16%;
+    }
+  }
+}

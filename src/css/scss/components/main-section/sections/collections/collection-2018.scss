@@ -1,0 +1,39 @@
+.collection-2018 {
+  display: flex;
+
+  &__image {
+    width: 49%;
+  }
+
+  &__content {
+    background-color: #000000;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-title {
+      font-weight: 400;
+      padding-bottom: calc(4vh - 1px);
+
+      @media (width < 1440px) {
+        padding-bottom: calc(2vh - 1px);
+      }
+    }
+
+    &-text {
+      width: 63%;
+
+      @media (width < 1440px) {
+        font-size: 12px;
+        width: 76%;
+      }
+
+      @media (width < 1024px) {
+        font-size: 10px;
+        width: 96%;
+      }
+    }
+  }
+}

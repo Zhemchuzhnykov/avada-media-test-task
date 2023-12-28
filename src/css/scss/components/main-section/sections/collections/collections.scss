@@ -1,6 +1,7 @@
 @import "./collection-21-22.scss";
 @import "./new-collection.scss";
+@import "./collection-2018.scss";
 
-.collections {
+.collections > div {
   display: flex;
 }
