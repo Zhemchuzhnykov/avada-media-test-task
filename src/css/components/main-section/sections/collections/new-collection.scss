@@ -1,0 +1,76 @@
+.new-collection {
+  width: 46.7%;
+  position: relative;
+
+  &__image {
+    height: 100%;
+
+    @media (width < 1920px) {
+      max-width: 920px;
+    }
+
+    @media (width < 1440px) {
+      max-width: 770px;
+    }
+
+    @media (width < 1024px) {
+      max-width: 570px;
+    }
+  }
+  &__title {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: calc(4vh - 1px);
+    margin-bottom: calc(4vh - 1px);
+
+    @media (width < 1440px) {
+      font-size: 25px;
+    }
+
+    @media (width < 1024px) {
+      font-size: 20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      width: 40%;
+      height: 1px;
+      background-color: #ffffff;
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+
+    @media (width < 1920px) {
+      bottom: 15%;
+    }
+
+    @media (width < 1440px) {
+      font-size: 13px;
+    }
+
+    @media (width < 1024px) {
+      font-size: 10px;
+      bottom: 14%;
+    }
+  }
+}
