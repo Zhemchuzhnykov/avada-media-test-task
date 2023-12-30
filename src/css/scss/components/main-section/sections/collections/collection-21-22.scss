@@ -5,28 +5,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-grow: 1;
   padding: calc(8vh - 1px) 0px;
 
-  @media (width > 1440px) {
+  @media (width > 1536px) {
     padding: calc(4vh - 1px) 0px;
   }
 
   &__title {
     font-weight: 700;
-    padding-bottom: calc(4vh - 1px);
+
+    @media (width > 1440px) {
+      font-size: 42px;
+    }
   }
 
   &__watches {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: calc(4vh - 1px);
-
-    @media (width > 1440px) {
-      margin: 0;
-    }
+    margin: 0;
   }
 }
 

@@ -1,5 +1,7 @@
 "use strict";
 
+import calculateBlocksFlexSpaces from "./calculateCss.js";
+
 /**
  * Changes the background of a menu item
  * and changes the text color
@@ -27,3 +29,5 @@ const menuElement = document.getElementsByClassName(
 
 menuElement.addEventListener("mouseover", highlightMenuItem);
 menuElement.addEventListener("mouseout", highlightMenuItem);
+document.addEventListener("DOMContentLoaded", calculateBlocksFlexSpaces);
+window.addEventListener("resize", calculateBlocksFlexSpaces);

@@ -2,6 +2,20 @@
 @import "./new-collection.scss";
 @import "./collection-2018.scss";
 
-.collections > div {
-  display: flex;
+.collections {
+  &_not-mobile {
+    display: flex;
+  }
+
+  @media (width < 768px) {
+    display: none;
+  }
+}
+
+.collections_mobile {
+  display: none;
+
+  @media (width < 768px) {
+    display: block;
+  }
 }
