@@ -1,19 +1,22 @@
 @import "./collection-21-22.scss";
 @import "./new-collection.scss";
 @import "./collection-2018.scss";
+@import "./collections-mobile.scss";
 
 .collections {
   &_not-mobile {
     display: flex;
-  }
 
-  @media (width < 768px) {
-    display: none;
+    @media (width < 768px) {
+      display: none;
+    }
   }
 }
 
 .collections_mobile {
   display: none;
+  padding-bottom: 20px;
+  background-color: #191b1c;
 
   @media (width < 768px) {
     display: block;

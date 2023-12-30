@@ -26,6 +26,11 @@ h3::after {
   height: 1px;
   background-color: #ffffff;
 }
+@media (width < 768px) {
+  h3::after {
+    display: none;
+  }
+}
 
 p {
   color: #ffffff;
@@ -203,6 +208,7 @@ button {
 @media (width < 768px) {
   .main-banner__text_mobile {
     display: block;
+    width: 40%;
   }
 }
 
@@ -328,9 +334,6 @@ button {
   max-width: 138px;
 }
 
-.collection-2018 {
-  display: flex;
-}
 .collection-2018__image {
   width: 49%;
 }
@@ -372,17 +375,31 @@ button {
   }
 }
 
+.collection-mobile {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.collection-mobile__image-mobile {
+  width: 80%;
+  margin: 20px 0px;
+}
+
 .collections_not-mobile {
   display: flex;
 }
 @media (width < 768px) {
-  .collections {
+  .collections_not-mobile {
     display: none;
   }
 }
 
 .collections_mobile {
   display: none;
+  padding-bottom: 20px;
+  background-color: #191b1c;
 }
 @media (width < 768px) {
   .collections_mobile {
