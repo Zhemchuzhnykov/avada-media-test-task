@@ -61,6 +61,21 @@ button {
   }
 }
 
+.watch-button-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0;
+  padding: 10px 25px;
+  width: 60%;
+  height: 15%;
+  background-color: rgba(27, 26, 26, 0.5019607843);
+  font-size: 18px;
+}
+
 .header-top {
   height: 44px;
   background-color: #000000;
@@ -252,15 +267,8 @@ button {
   padding: calc(7vh - 1px) calc(1vw - 1px);
   position: relative;
 }
-.watch__image-container > .watch__cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  font-family: "Playfair Display", serif;
-  letter-spacing: 0;
-  padding: 10px 25px;
+.watch__image-container > .watch-button-centered {
+  width: 70%;
 }
 .watch__image {
   width: 100%;
@@ -430,6 +438,17 @@ button {
 }
 @media (width < 768px) {
   .new-arrivals {
+    padding: 0;
+    display: block;
+  }
+}
+@media (width < 768px) {
+  .new-arrivals__title {
+    display: none;
+  }
+}
+@media (width < 768px) {
+  .new-arrivals__watches {
     display: none;
   }
 }
@@ -439,6 +458,39 @@ button {
 }
 .new-arrivals__watches-line_first {
   margin-bottom: calc(8vh - 1px);
+}
+
+.new-arrivals-swiper {
+  display: none;
+  padding: 20px 0px;
+}
+@media (width < 768px) {
+  .new-arrivals-swiper {
+    display: block;
+  }
+}
+.new-arrivals-swiper__title {
+  margin-bottom: 20px;
+}
+.new-arrivals-swiper__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-arrivals-swiper__slide-image {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.new-arrivals-swiper__slide_all {
+  position: relative;
+}
+.new-arrivals-swiper__button {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(13, 159, 175);
 }
 
 body {

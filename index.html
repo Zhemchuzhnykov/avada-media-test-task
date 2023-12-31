@@ -223,7 +223,7 @@
         </div>
 
         <!-- Mobile slides of the section "Collections" -->
-        <div class="swiper collections_mobile">
+        <div class="swiper collections-swiper collections_mobile">
           <div class="swiper-wrapper">
             <div class="swiper-slide collection-mobile">
               <h3>СЕЗОН 2021/2022</h3>
@@ -263,7 +263,7 @@
 
       <!-- Section of new arrivals -->
       <section class="new-arrivals js-block">
-        <h3 class="js-title">НОВІ НАДХОДЖЕННЯ</h3>
+        <h3 class="js-title new-arrivals__title">НОВІ НАДХОДЖЕННЯ</h3>
         <div class="new-arrivals__watches">
           <div
             class="new-arrivals__watches-line new-arrivals__watches-line_first js-watches-container"
@@ -354,10 +354,87 @@
                   src="public/watches/new-arrivals/new-arrival-watch-golden.svg"
                   alt="A silver watch from new arrivals"
                 />
-                <button class="watch__cta">ПОКАЗАТИ ВСІ</button>
+                <button class="watch-button-centered">ПОКАЗАТИ ВСІ</button>
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Mobile section of new arrivals -->
+        <div class="swiper-container new-arrivals-swiper">
+          <h3 class="new-arrivals-swiper__title">НОВІ НАДХОДЖЕННЯ</h3>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide new-arrivals-swiper__slide">
+              <img
+                class="new-arrivals-swiper__slide-image"
+                src="public/watches/new-arrivals/new-arrival-watch-blue.svg"
+                alt="A blue watch from new arrivals"
+              />
+              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+            </div>
+            <div class="swiper-slide new-arrivals-swiper__slide">
+              <img
+                class="new-arrivals-swiper__slide-image"
+                src="public/watches/new-arrivals/new-arrival-watch-golden.svg"
+                alt="A golden watch from new arrivals"
+              />
+              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+            </div>
+            <div class="swiper-slide new-arrivals-swiper__slide">
+              <img
+                class="new-arrivals-swiper__slide-image"
+                src="public/watches/new-arrivals/new-arrival-watch-black-and-golden.svg"
+                alt="A golden black watch from new arrivals"
+              />
+              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+            </div>
+            <div class="swiper-slide new-arrivals-swiper__slide">
+              <img
+                class="new-arrivals-swiper__slide-image"
+                src="public/watches/new-arrivals/new-arrival-watch-silver.svg"
+                alt="A golden and silver watch from new arrivals"
+              />
+              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+            </div>
+            <div class="swiper-slide new-arrivals-swiper__slide">
+              <img
+                class="new-arrivals-swiper__slide-image"
+                src="public/watches/new-arrivals/new-arrival-watch-brown.svg"
+                alt="A brown watch from new arrivals"
+              />
+              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+            </div>
+            <div class="swiper-slide new-arrivals-swiper__slide">
+              <img
+                class="new-arrivals-swiper__slide-image"
+                src="public/watches/new-arrivals/new-arrival-watch-black-and-silver.svg"
+                alt="A silver black watch from new arrivals"
+              />
+              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+            </div>
+            <div class="swiper-slide new-arrivals-swiper__slide">
+              <img
+                class="new-arrivals-swiper__slide-image"
+                src="public/watches/new-arrivals/new-arrival-watch-black-and-red.png"
+                alt="A black watch with red and green line on the strip from new arrivals"
+              />
+              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+            </div>
+            <div
+              class="swiper-slide new-arrivals-swiper__slide new-arrivals-swiper__slide_all"
+            >
+              <img
+                class="new-arrivals-swiper__slide-image watch__image-blurred"
+                src="public/watches/new-arrivals/new-arrival-watch-golden.svg"
+                alt="A golden and blurred watch from new arrivals on the background"
+              />
+              <button class="watch-button-centered">ПОКАЗАТИ ВСІ</button>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
         </div>
       </section>
     </main>
@@ -365,7 +442,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".swiper", {
+      const collectionsSwiper = new Swiper(".collections-swiper", {
         loop: true,
         pagination: {
           el: ".swiper-pagination",
@@ -374,6 +451,23 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      const newArrivalsSlider = new Swiper(".new-arrivals-swiper", {
+        effect: "cube",
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
         scrollbar: {
           el: ".swiper-scrollbar",
         },

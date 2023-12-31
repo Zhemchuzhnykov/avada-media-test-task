@@ -7,7 +7,20 @@
   background-color: #000000;
 
   @media (width < 768px) {
-    display: none;
+    padding: 0;
+    display: block;
+  }
+
+  &__title {
+    @media (width < 768px) {
+      display: none;
+    }
+  }
+
+  &__watches {
+    @media (width < 768px) {
+      display: none;
+    }
   }
 
   &__watches-line {
@@ -18,4 +31,41 @@
       margin-bottom: calc(8vh - 1px);
     }
   }
+}
+
+.new-arrivals-swiper {
+  display: none;
+  padding: 20px 0px;
+
+  @media (width < 768px) {
+    display: block;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-image {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+
+    &_all {
+      position: relative;
+    }
+  }
+
+  &__button {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(13, 159, 175);
 }
