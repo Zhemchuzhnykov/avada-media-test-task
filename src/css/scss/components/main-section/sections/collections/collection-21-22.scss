@@ -25,7 +25,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0;
   }
 }
 
@@ -37,10 +36,26 @@
   &__image-container {
     background-color: #191b1c;
     padding: calc(7vh - 1px) calc(1vw - 1px);
+    position: relative;
+
+    & > .watch__cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0;
+      padding: 10px 25px;
+    }
   }
 
   &__image {
     width: 100%;
+
+    &-blurred {
+      filter: blur(2px);
+    }
   }
 
   &__name {

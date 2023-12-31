@@ -1,6 +1,9 @@
 "use strict";
 
-import calculateBlocksFlexSpaces from "./calculateCss.js";
+import {
+  calculateBlocksFlexSpaces,
+  calculateWatchesSideSpaces,
+} from "./calculateCss.js";
 
 /**
  * Changes the background of a menu item
@@ -31,3 +34,5 @@ menuElement.addEventListener("mouseover", highlightMenuItem);
 menuElement.addEventListener("mouseout", highlightMenuItem);
 document.addEventListener("DOMContentLoaded", calculateBlocksFlexSpaces);
 window.addEventListener("resize", calculateBlocksFlexSpaces);
+document.addEventListener("DOMContentLoaded", calculateWatchesSideSpaces);
+window.addEventListener("resize", calculateWatchesSideSpaces);

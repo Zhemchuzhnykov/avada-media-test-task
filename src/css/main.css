@@ -180,8 +180,8 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  font-size: 16px;
-  width: 38%;
+  font-size: 13px;
+  width: 40%;
   max-width: 730px;
   height: auto;
   text-transform: uppercase;
@@ -240,7 +240,6 @@ button {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0;
 }
 
 .watch {
@@ -251,9 +250,23 @@ button {
 .watch__image-container {
   background-color: #191b1c;
   padding: calc(7vh - 1px) calc(1vw - 1px);
+  position: relative;
+}
+.watch__image-container > .watch__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0;
+  padding: 10px 25px;
 }
 .watch__image {
   width: 100%;
+}
+.watch__image-blurred {
+  filter: blur(2px);
 }
 .watch__name {
   font-family: "Playfair Display", serif;
@@ -405,6 +418,27 @@ button {
   .collections_mobile {
     display: block;
   }
+}
+
+.new-arrivals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: calc(10vh - 1px) 0px;
+  background-color: #000000;
+}
+@media (width < 768px) {
+  .new-arrivals {
+    display: none;
+  }
+}
+.new-arrivals__watches-line {
+  display: flex;
+  justify-content: center;
+}
+.new-arrivals__watches-line_first {
+  margin-bottom: calc(8vh - 1px);
 }
 
 body {
