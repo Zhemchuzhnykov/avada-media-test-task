@@ -14,8 +14,8 @@ export function calculateBlocksFlexSpaces() {
     const collectionBlockHeight = collectionBlock.offsetHeight;
     let denominator = 0.05;
 
-    if (collectionBlock.classList.contains("collection-21-22")) {
-      denominator = 0.08;
+    if (collectionBlockHeight < 750) {
+      denominator = 0.09;
     }
 
     const titleBottomPadding = collectionBlockHeight * denominator;
@@ -27,7 +27,7 @@ export function calculateBlocksFlexSpaces() {
   const texts = document.querySelectorAll(".js-text");
 
   texts.forEach((text) => {
-    const collectionBlockHeight = text.closest(".js-block").offsetHeight;
+    const collectionBlockHeight = text.closest(".js-text-block").offsetHeight;
     const textBottomMargin = collectionBlockHeight * 0.07;
 
     text.style.marginBottom = textBottomMargin + "px";

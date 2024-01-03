@@ -24,12 +24,16 @@
         width: 73%;
       }
 
+      @media (width < 1600px) {
+        font-size: 15px;
+      }
+
       @media (width < 1536px) {
         font-size: 14px;
       }
 
       @media (width < 1440px) {
-        font-size: 12px;
+        font-size: 10px;
         width: 84%;
       }
 
