@@ -1,0 +1,31 @@
+.articles-swiper {
+  background-color: #0f0f0f;
+  // padding-bottom: 40px;
+  display: none;
+  position: relative;
+  top: -38px;
+  z-index: 1;
+
+  @media (width < 768px) {
+    display: block;
+  }
+
+  &__slide {
+    position: relative;
+
+    &-title {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #0f0f0fcf;
+      border-radius: 10px;
+    }
+  }
+
+  &-bullets {
+    width: 24px;
+    height: 24px;
+    color: #000000;
+  }
+}

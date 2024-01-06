@@ -1,3 +1,5 @@
+@import "./articles-mobile.scss";
+
 .articles {
   display: flex;
   flex-direction: column;
@@ -9,6 +11,13 @@
   @media (width < 768px) {
     padding: 0;
     display: block;
+    position: relative;
+  }
+
+  &__title {
+    @media (width < 768px) {
+      background-color: #0f0f0f90;
+    }
   }
 }
 

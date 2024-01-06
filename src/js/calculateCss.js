@@ -9,6 +9,10 @@ export function calculateBlocksFlexSpaces() {
   const titles = document.querySelectorAll(".js-title");
 
   titles.forEach((title) => {
+    if (screen.width < 768) {
+      return;
+    }
+
     const titleParent = title.parentElement;
     const collectionBlock = title.closest(".js-block");
     const collectionBlockHeight = collectionBlock.offsetHeight;

@@ -372,7 +372,9 @@
                 src="public/watches/new-arrivals/new-arrival-watch-blue.svg"
                 alt="A blue watch from new arrivals"
               />
-              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+              <button class="new-arrivals-swiper__button">
+                Carl von Zeyten
+              </button>
             </div>
             <div class="swiper-slide new-arrivals-swiper__slide">
               <img
@@ -380,7 +382,7 @@
                 src="public/watches/new-arrivals/new-arrival-watch-golden.svg"
                 alt="A golden watch from new arrivals"
               />
-              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+              <button class="new-arrivals-swiper__button">JORD AR5905</button>
             </div>
             <div class="swiper-slide new-arrivals-swiper__slide">
               <img
@@ -388,7 +390,9 @@
                 src="public/watches/new-arrivals/new-arrival-watch-black-and-golden.svg"
                 alt="A golden black watch from new arrivals"
               />
-              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+              <button class="new-arrivals-swiper__button">
+                Emporio Armani Sportivo
+              </button>
             </div>
             <div class="swiper-slide new-arrivals-swiper__slide">
               <img
@@ -396,7 +400,9 @@
                 src="public/watches/new-arrivals/new-arrival-watch-silver.svg"
                 alt="A golden and silver watch from new arrivals"
               />
-              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+              <button class="new-arrivals-swiper__button">
+                Rolex Oyster Perpetual
+              </button>
             </div>
             <div class="swiper-slide new-arrivals-swiper__slide">
               <img
@@ -404,7 +410,9 @@
                 src="public/watches/new-arrivals/new-arrival-watch-brown.svg"
                 alt="A brown watch from new arrivals"
               />
-              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+              <button class="new-arrivals-swiper__button">
+                Louis XVI ATHOS
+              </button>
             </div>
             <div class="swiper-slide new-arrivals-swiper__slide">
               <img
@@ -412,7 +420,9 @@
                 src="public/watches/new-arrivals/new-arrival-watch-black-and-silver.svg"
                 alt="A silver black watch from new arrivals"
               />
-              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+              <button class="new-arrivals-swiper__button">
+                U-Boat Italo Fontana
+              </button>
             </div>
             <div class="swiper-slide new-arrivals-swiper__slide">
               <img
@@ -420,7 +430,7 @@
                 src="public/watches/new-arrivals/new-arrival-watch-black-and-red.png"
                 alt="A black watch with red and green line on the strip from new arrivals"
               />
-              <button class="new-arrivals-swiper__button">ДЕТАЛІ</button>
+              <button class="new-arrivals-swiper__button">Gucci Men's G</button>
             </div>
             <div
               class="swiper-slide new-arrivals-swiper__slide new-arrivals-swiper__slide_all"
@@ -442,7 +452,7 @@
 
       <!-- Articles and useful information -->
       <section class="articles js-block">
-        <h3 class="js-title">СТАТТІ ТА КОРИСНА ІНФОРМАЦІЯ</h3>
+        <h3 class="js-title articles__title">СТАТТІ ТА КОРИСНА ІНФОРМАЦІЯ</h3>
         <div class="article">
           <img
             class="article__img"
@@ -507,6 +517,51 @@
             >
           </div>
         </div>
+
+        <!-- Mobile section of articles -->
+        <div class="swiper articles-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide articles-swiper__slide">
+              <img
+                class="articles-swiper__slide-img"
+                src="public/articles/mobile/roger-dubuis-mobile.jpg"
+                alt="Roger Dubuis looks at a watch"
+              />
+              <a href="#"
+                ><h3 class="articles-swiper__slide-title">
+                  ROGER DUBUIS. ЧАСТИНА 1
+                </h3></a
+              >
+            </div>
+            <div class="swiper-slide articles-swiper__slide">
+              <img
+                class="articles-swiper__slide-img"
+                src="public/articles/mobile/luxury-watches-mobile.jpg"
+                alt="Roger Dubuis looks at a watch"
+              />
+              <a href="#">
+                <h3 class="articles-swiper__slide-title">
+                  ІСТОРІЯ ЛЮКСОВИХ <br />
+                  ГОДИННИКІВ. ЧАСТИНА 1
+                </h3>
+              </a>
+            </div>
+            <div class="swiper-slide articles-swiper__slide">
+              <img
+                class="articles-swiper__slide-img"
+                src="public/articles/mobile/tissot-mobile.jpg"
+                alt="Roger Dubuis looks at a watch"
+              />
+              <a href="#">
+                <h3 class="articles-swiper__slide-title">
+                  ВЕЛИКИЙ ТА СМІЛИВИЙ <br />TISSOT PRS 516 CHRONOGRAPH
+                </h3>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- <p style="color: white">dsssssssssssss</p> -->
+        </div>
       </section>
     </main>
     <script type="module" src="/src/js/main.js"></script>
@@ -541,6 +596,22 @@
 
         scrollbar: {
           el: ".swiper-scrollbar",
+        },
+      });
+
+      const articlesSwiper = new Swiper(".articles-swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' +
+              className +
+              ' articles-swiper-bullets">' +
+              (index + 1) +
+              "</span>"
+            );
+          },
         },
       });
     </script>

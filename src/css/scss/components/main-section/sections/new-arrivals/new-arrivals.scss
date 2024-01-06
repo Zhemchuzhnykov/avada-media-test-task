@@ -1,3 +1,5 @@
+@import "./new-arrivals-mobile.scss";
+
 .new-arrivals {
   display: flex;
   flex-direction: column;
@@ -31,41 +33,4 @@
       margin-bottom: calc(8vh - 1px);
     }
   }
-}
-
-.new-arrivals-swiper {
-  display: none;
-  padding: 20px 0px;
-
-  @media (width < 768px) {
-    display: block;
-  }
-
-  &__title {
-    margin-bottom: 20px;
-  }
-
-  &__slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &-image {
-      width: 80%;
-      margin-bottom: 10px;
-    }
-
-    &_all {
-      position: relative;
-    }
-  }
-
-  &__button {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-}
-
-.swiper-pagination-bullet {
-  background-color: rgb(13, 159, 175);
 }

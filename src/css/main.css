@@ -17,6 +17,14 @@ h3 {
     font-size: 20px;
   }
 }
+@media (width < 768px) {
+  h3 {
+    font-size: 15px;
+    padding: 10px;
+    z-index: 2;
+    line-height: 20px;
+  }
+}
 h3::after {
   content: "";
   position: absolute;
@@ -58,6 +66,11 @@ button {
   button {
     font-size: 10px;
     padding: 6px 20px;
+  }
+}
+@media (width < 768px) {
+  button {
+    font-size: 12px;
   }
 }
 
@@ -445,6 +458,39 @@ button {
   }
 }
 
+.new-arrivals-swiper {
+  display: none;
+  padding: 10px 0px 20px 0px;
+}
+@media (width < 768px) {
+  .new-arrivals-swiper {
+    display: block;
+  }
+}
+.new-arrivals-swiper__title {
+  margin-bottom: 20px;
+}
+.new-arrivals-swiper__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-arrivals-swiper__slide-image {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.new-arrivals-swiper__slide_all {
+  position: relative;
+}
+.new-arrivals-swiper__button {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(13, 159, 175);
+}
+
 .new-arrivals {
   display: flex;
   flex-direction: column;
@@ -477,37 +523,33 @@ button {
   margin-bottom: calc(8vh - 1px);
 }
 
-.new-arrivals-swiper {
+.articles-swiper {
+  background-color: #0f0f0f;
   display: none;
-  padding: 20px 0px;
+  position: relative;
+  top: -38px;
+  z-index: 1;
 }
 @media (width < 768px) {
-  .new-arrivals-swiper {
+  .articles-swiper {
     display: block;
   }
 }
-.new-arrivals-swiper__title {
-  margin-bottom: 20px;
-}
-.new-arrivals-swiper__slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.new-arrivals-swiper__slide-image {
-  width: 80%;
-  margin-bottom: 10px;
-}
-.new-arrivals-swiper__slide_all {
+.articles-swiper__slide {
   position: relative;
 }
-.new-arrivals-swiper__button {
-  font-size: 16px;
-  margin-bottom: 20px;
+.articles-swiper__slide-title {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(15, 15, 15, 0.8117647059);
+  border-radius: 10px;
 }
-
-.swiper-pagination-bullet {
-  background-color: rgb(13, 159, 175);
+.articles-swiper-bullets {
+  width: 24px;
+  height: 24px;
+  color: #000000;
 }
 
 .articles {
@@ -522,6 +564,12 @@ button {
   .articles {
     padding: 0;
     display: block;
+    position: relative;
+  }
+}
+@media (width < 768px) {
+  .articles__title {
+    background-color: rgba(15, 15, 15, 0.5647058824);
   }
 }
 
