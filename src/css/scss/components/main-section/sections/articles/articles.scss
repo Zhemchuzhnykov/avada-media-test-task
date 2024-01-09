@@ -8,6 +8,10 @@
   background-color: #0f0f0f;
   padding-top: calc(10vh - 1px);
 
+  @media (width < 1024px) {
+    padding-top: calc(6vh - 1px);
+  }
+
   @media (width < 768px) {
     padding: 0;
     display: block;
