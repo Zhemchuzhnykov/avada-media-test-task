@@ -40,6 +40,11 @@ h3::after {
   }
 }
 
+h4 {
+  font-weight: 400;
+  color: #ffffff;
+}
+
 p {
   color: #ffffff;
   font-size: 14px;
@@ -290,7 +295,12 @@ button {
   }
 }
 .partners__logos-item {
-  max-width: 49%;
+  max-width: 23%;
+}
+@media (width < 768px) {
+  .partners__logos-item {
+    max-width: 49%;
+  }
 }
 
 .collection-21-22 {
@@ -638,14 +648,17 @@ button {
 }
 @media (width < 1440px) {
   .article__content {
+    padding: calc(6vh - 1px) calc(4vw - 1px);
+  }
+}
+@media (width < 1024px) {
+  .article__content {
     padding: calc(2vh - 1px) calc(4vw - 1px);
   }
 }
 .article__content-title {
-  font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.1em;
-  color: #ffffff;
 }
 @media (width < 1920px) {
   .article__content-title {
@@ -710,6 +723,200 @@ button {
   .article__content-hashtags {
     line-height: 50px;
     font-size: 7px;
+  }
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  padding: calc(10vh - 1px) 0 calc(5vh - 1px) 0;
+  background-position: center;
+}
+@media (width < 1920px) {
+  .footer-main {
+    padding: calc(10vh - 1px) 0 calc(6vh - 1px) 0;
+  }
+}
+@media (width < 768px) {
+  .footer-main {
+    display: block;
+    padding: 10px;
+  }
+}
+
+.footer-block {
+  max-width: 18%;
+  margin: 0 calc(1vw - 1px);
+}
+@media (width < 1440px) {
+  .footer-block {
+    max-width: 25%;
+  }
+}
+@media (width < 768px) {
+  .footer-block {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.footer-block__title {
+  font-family: "Playfair Display", serif;
+  margin-bottom: calc(4vh - 1px);
+}
+@media (width < 1440px) {
+  .footer-block__title {
+    font-size: 14px;
+  }
+}
+@media (width < 768px) {
+  .footer-block__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+.footer-block__text {
+  text-align: left;
+  font-size: 13px;
+}
+@media (width < 1920px) {
+  .footer-block__text {
+    font-size: 12px;
+  }
+}
+@media (width < 1536px) {
+  .footer-block__text {
+    font-size: 11px;
+  }
+}
+@media (width < 1440px) {
+  .footer-block__text {
+    font-size: 10px;
+  }
+}
+@media (width < 1024px) {
+  .footer-block__text {
+    font-size: 9px;
+  }
+}
+@media (width < 768px) {
+  .footer-block__text {
+    display: none;
+  }
+}
+.footer-block__text-mobile {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+@media (width < 768px) {
+  .footer-block__links {
+    margin-bottom: 10px;
+  }
+}
+.footer-block__links-item {
+  display: inline-block;
+  background-color: #0f0f0f;
+  padding: calc(1vh - 1px) calc(1vw - 1px);
+  font-size: 13px;
+  margin: 10px 3px;
+}
+@media (width < 1920px) {
+  .footer-block__links-item {
+    margin: 8px 3px;
+  }
+}
+@media (width < 1536px) {
+  .footer-block__links-item {
+    margin: 7px 3px;
+  }
+}
+@media (width < 1024px) {
+  .footer-block__links-item {
+    font-size: 10px;
+    margin: 5px 2px;
+  }
+}
+@media (width < 768px) {
+  .footer-block__links-item {
+    font-size: 16px;
+    margin: 6px 4px;
+    padding: 5px 10px;
+  }
+}
+.footer-block__links-item > a {
+  color: #d0d0d0;
+  text-decoration: none;
+}
+
+.footer-subscription {
+  display: flex;
+  width: 100%;
+  height: calc(4vh - 1px);
+}
+@media (width < 768px) {
+  .footer-subscription {
+    justify-content: space-between;
+  }
+}
+.footer-subscription__input {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 0;
+  padding: 0px 15px;
+}
+@media (width < 1920px) {
+  .footer-subscription__input {
+    font-size: 14px;
+  }
+}
+@media (width < 1440px) {
+  .footer-subscription__input {
+    font-size: 12px;
+    padding: 0px 10px;
+  }
+}
+@media (width < 1024px) {
+  .footer-subscription__input {
+    font-size: 10px;
+  }
+}
+@media (width < 768px) {
+  .footer-subscription__input {
+    font-size: 14px;
+    width: 50%;
+    height: 30px;
+  }
+}
+.footer-subscription__input::placeholder {
+  color: #ffffff;
+}
+.footer-subscription__button {
+  width: 40%;
+  font-size: 12px;
+  background-color: #0f0f0f;
+  padding: 0;
+  border: 0;
+}
+@media (width < 1920px) {
+  .footer-subscription__button {
+    font-size: 11px;
+  }
+}
+@media (width < 1600px) {
+  .footer-subscription__button {
+    font-size: 10px;
+  }
+}
+@media (width < 1024px) {
+  .footer-subscription__button {
+    font-size: 7px;
+  }
+}
+@media (width < 768px) {
+  .footer-subscription__button {
+    font-size: 12px;
+    width: 40%;
+    height: 30px;
   }
 }
 

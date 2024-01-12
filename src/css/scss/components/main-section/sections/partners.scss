@@ -33,7 +33,11 @@
     }
 
     &-item {
-      max-width: 49%;
+      max-width: 23%;
+
+      @media (width < 768px) {
+        max-width: 49%;
+      }
     }
   }
 }
