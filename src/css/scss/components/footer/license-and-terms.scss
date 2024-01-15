@@ -1,0 +1,17 @@
+.footer-license-and-terms {
+  background-color: #0f0f0f;
+  height: calc(5vh - 1px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__item {
+    font-weight: 400;
+    font-size: 12px;
+    color: #d0d0d0;
+
+    @media (width < 1024px) {
+      font-size: 10px;
+    }
+  }
+}
