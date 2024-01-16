@@ -50,6 +50,10 @@
       padding: calc(6vh - 1px) calc(4vw - 1px);
     }
 
+    @media (width < 1366px) {
+      padding: calc(3vh - 1px) calc(4vw - 1px);
+    }
+
     @media (width < 1024px) {
       padding: calc(2vh - 1px) calc(4vw - 1px);
     }
@@ -103,6 +107,7 @@
 
       @media (width < 1536px) {
         font-size: 13px;
+        line-height: 77px;
       }
 
       @media (width < 1440px) {

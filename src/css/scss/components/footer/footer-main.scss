@@ -97,6 +97,11 @@
         margin: 7px 3px;
       }
 
+      @media (width < 1440px) {
+        font-size: 12px;
+        margin: 6px 2px;
+      }
+
       @media (width < 1024px) {
         font-size: 10px;
         margin: 5px 2px;

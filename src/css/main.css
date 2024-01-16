@@ -7,9 +7,19 @@ h3 {
   position: relative;
   margin: 0;
 }
+@media (width < 1920px) {
+  h3 {
+    font-size: 30px;
+  }
+}
 @media (width < 1440px) {
   h3 {
     font-size: 30px;
+  }
+}
+@media (width < 1366px) {
+  h3 {
+    font-size: 25px;
   }
 }
 @media (width < 1024px) {
@@ -62,10 +72,25 @@ button {
   padding: 10px 30px;
   border: 1px solid #ffffff;
 }
+@media (width < 1920px) {
+  button {
+    font-size: 17px;
+  }
+}
+@media (width < 1536px) {
+  button {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+}
 @media (width < 1440px) {
   button {
     font-size: 13px;
-    padding: 8px 25px;
+  }
+}
+@media (width < 1366px) {
+  button {
+    font-size: 12px;
   }
 }
 @media (width < 1024px) {
@@ -220,6 +245,11 @@ button {
   width: 18vw;
   max-width: 320px;
 }
+@media (width < 768px) {
+  .main-banner__logo {
+    top: 35%;
+  }
+}
 .main-banner__text {
   position: absolute;
   top: 74%;
@@ -233,13 +263,30 @@ button {
   text-transform: uppercase;
   margin: 0;
 }
-@media (width < 1440px) {
+@media (width < 1920px) {
+  .main-banner__text {
+    font-size: 14px;
+  }
+}
+@media (width < 1600px) {
+  .main-banner__text {
+    font-size: 13px;
+  }
+}
+@media (width < 1536px) {
   .main-banner__text {
     font-size: 12px;
   }
 }
+@media (width < 1366px) {
+  .main-banner__text {
+    width: 45%;
+    font-size: 10px;
+  }
+}
 @media (width < 1024px) {
   .main-banner__text {
+    width: 50%;
     font-size: 8px;
   }
 }
@@ -264,11 +311,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media (width < 1440px) {
-  .partners {
-    padding: calc(4vh - 1px) 0 calc(6vh - 1px) 0;
-  }
 }
 @media (width < 1024px) {
   .partners {
@@ -316,11 +358,6 @@ button {
 }
 .collection-21-22__title {
   font-weight: 700;
-}
-@media (width > 1440px) {
-  .collection-21-22__title {
-    font-size: 42px;
-  }
 }
 .collection-21-22__watches {
   width: 92%;
@@ -384,14 +421,29 @@ button {
   position: relative;
   overflow: hidden;
 }
-@media (width < 1440px) {
+@media (width < 1920px) {
   .new-collection__image {
     max-width: 717px;
   }
 }
+@media (width < 1536px) {
+  .new-collection__image {
+    max-width: 680px;
+  }
+}
+@media (width < 1440px) {
+  .new-collection__image {
+    max-width: 630px;
+  }
+}
+@media (width < 1366px) {
+  .new-collection__image {
+    max-width: 550px;
+  }
+}
 @media (width < 1024px) {
   .new-collection__image {
-    max-width: 519px;
+    max-width: 430px;
   }
 }
 .new-collection__content {
@@ -405,17 +457,17 @@ button {
 }
 @media (width < 1920px) {
   .new-collection__content {
-    bottom: 4%;
+    bottom: -2%;
+  }
+}
+@media (width < 1600px) {
+  .new-collection__content {
+    bottom: 0;
   }
 }
 .new-collection__content-title {
   font-weight: 700;
   margin-bottom: calc(4vh - 1px);
-}
-@media (width < 1440px) {
-  .new-collection__content-title {
-    font-size: 25px;
-  }
 }
 .new-collection__cta {
   max-width: 138px;
@@ -457,12 +509,19 @@ button {
 }
 @media (width < 1440px) {
   .collection-2018__content-text {
+    width: 63%;
+    font-size: 12px;
+  }
+}
+@media (width < 1366px) {
+  .collection-2018__content-text {
+    width: 73%;
     font-size: 10px;
-    width: 84%;
   }
 }
 @media (width < 1024px) {
   .collection-2018__content-text {
+    width: 83%;
     font-size: 8px;
   }
 }
@@ -645,6 +704,11 @@ button {
     padding: calc(6vh - 1px) calc(4vw - 1px);
   }
 }
+@media (width < 1366px) {
+  .article__content {
+    padding: calc(3vh - 1px) calc(4vw - 1px);
+  }
+}
 @media (width < 1024px) {
   .article__content {
     padding: calc(2vh - 1px) calc(4vw - 1px);
@@ -705,6 +769,7 @@ button {
 @media (width < 1536px) {
   .article__content-hashtags {
     font-size: 13px;
+    line-height: 77px;
   }
 }
 @media (width < 1440px) {
@@ -828,6 +893,12 @@ button {
   .footer-block__links-item {
     font-size: 13px;
     margin: 7px 3px;
+  }
+}
+@media (width < 1440px) {
+  .footer-block__links-item {
+    font-size: 12px;
+    margin: 6px 2px;
   }
 }
 @media (width < 1024px) {
