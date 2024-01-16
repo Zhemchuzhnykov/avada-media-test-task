@@ -60,6 +60,7 @@ button {
   font-size: 18px;
   letter-spacing: 2px;
   padding: 10px 30px;
+  border: 1px solid #ffffff;
 }
 @media (width < 1440px) {
   button {
@@ -221,11 +222,11 @@ button {
 }
 .main-banner__text {
   position: absolute;
-  top: 80%;
+  top: 74%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  font-size: 13px;
+  font-size: 15px;
   width: 40%;
   max-width: 730px;
   height: auto;
@@ -259,7 +260,7 @@ button {
 
 .partners {
   background-color: #0f0f0f;
-  padding: calc(6vh - 1px) 0 calc(8vh - 1px) 0;
+  padding: calc(4vh - 1px) 0 calc(8vh - 1px) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,12 +313,6 @@ button {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  padding: calc(8vh - 1px) 0px;
-}
-@media (width > 1536px) {
-  .collection-21-22 {
-    padding: calc(4vh - 1px) 0px;
-  }
 }
 .collection-21-22__title {
   font-weight: 700;
@@ -328,7 +323,7 @@ button {
   }
 }
 .collection-21-22__watches {
-  width: 100%;
+  width: 92%;
   display: flex;
   justify-content: center;
 }
@@ -340,7 +335,7 @@ button {
 }
 .watch__image-container {
   background-color: #191b1c;
-  padding: calc(7vh - 1px) calc(1vw - 1px);
+  padding: calc(3vh - 1px) calc(1vw - 1px);
   position: relative;
 }
 .watch__image-container > .watch-button-centered {
@@ -389,11 +384,6 @@ button {
   position: relative;
   overflow: hidden;
 }
-@media (width < 1920px) {
-  .new-collection__image {
-    max-width: 880px;
-  }
-}
 @media (width < 1440px) {
   .new-collection__image {
     max-width: 717px;
@@ -406,7 +396,7 @@ button {
 }
 .new-collection__content {
   position: absolute;
-  bottom: 0%;
+  bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -415,7 +405,7 @@ button {
 }
 @media (width < 1920px) {
   .new-collection__content {
-    bottom: 2%;
+    bottom: 4%;
   }
 }
 .new-collection__content-title {
@@ -547,7 +537,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: calc(10vh - 1px) 0px;
+  padding: calc(8vh - 1px) 0px;
   background-color: #000000;
 }
 @media (width < 768px) {
@@ -609,7 +599,7 @@ button {
   align-items: center;
   justify-content: center;
   background-color: #0f0f0f;
-  padding-top: calc(10vh - 1px);
+  padding-top: calc(6vh - 1px);
 }
 @media (width < 1024px) {
   .articles {
@@ -622,6 +612,10 @@ button {
     display: block;
     position: relative;
   }
+}
+.articles__title::after {
+  left: 35%;
+  width: 25%;
 }
 @media (width < 768px) {
   .articles__title {

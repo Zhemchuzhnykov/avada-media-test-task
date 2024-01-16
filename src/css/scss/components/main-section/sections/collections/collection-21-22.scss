@@ -7,11 +7,10 @@
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  padding: calc(8vh - 1px) 0px;
 
-  @media (width > 1536px) {
-    padding: calc(4vh - 1px) 0px;
-  }
+  // @media (width > 1536px) {
+  //   padding: calc(4vh - 1px) 0px;
+  // }
 
   &__title {
     font-weight: 700;
@@ -22,7 +21,7 @@
   }
 
   &__watches {
-    width: 100%;
+    width: 92%;
     display: flex;
     justify-content: center;
   }
@@ -35,7 +34,7 @@
 
   &__image-container {
     background-color: #191b1c;
-    padding: calc(7vh - 1px) calc(1vw - 1px);
+    padding: calc(3vh - 1px) calc(1vw - 1px);
     position: relative;
 
     & > .watch-button-centered {

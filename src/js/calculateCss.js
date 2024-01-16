@@ -1,5 +1,10 @@
 "use strict";
 
+import {
+  titleSpaces,
+  watchesContainerSideSpaces,
+} from "./configs/titleSpacesConfig.js";
+
 /**
  * Calculates the size of the bottom paddings for the titles and texts
  *
@@ -7,25 +12,25 @@
  */
 export function calculateBlocksFlexSpaces() {
   const titles = document.querySelectorAll(".js-title");
+  const titleBlocksClasses = Object.keys(titleSpaces);
 
   titles.forEach((title) => {
     if (screen.width < 768) {
       return;
     }
 
-    const titleParent = title.parentElement;
     const collectionBlock = title.closest(".js-block");
+    const collectionBlockClasses = [...collectionBlock.classList];
+    const blockSpecificClass = titleBlocksClasses.find((cLass) =>
+      collectionBlockClasses.includes(cLass)
+    );
+    const denominator = titleSpaces[blockSpecificClass];
     const collectionBlockHeight = collectionBlock.offsetHeight;
-    let denominator = 0.05;
-
-    if (collectionBlockHeight < 750) {
-      denominator = 0.09;
-    }
-
     const titleBottomPadding = collectionBlockHeight * denominator;
+    const titleBottomMargin = collectionBlockHeight * (denominator + 0.01);
 
     title.style.paddingBottom = titleBottomPadding + "px";
-    title.style.marginBottom = titleBottomPadding + "px";
+    title.style.marginBottom = titleBottomMargin + "px";
   });
 
   const texts = document.querySelectorAll(".js-text");
@@ -45,12 +50,21 @@ export function calculateBlocksFlexSpaces() {
  */
 export function calculateWatchesSideSpaces() {
   const watchesContainers = document.querySelectorAll(".js-watches-container");
+  const watchesContainerBlocksClasses = Object.keys(watchesContainerSideSpaces);
 
   watchesContainers.forEach((container) => {
-    const blockWidth = container.closest(".js-block").offsetWidth;
-    const watchContainerSideMargin = blockWidth * 0.05;
+    const watchesContainerBlock = container.closest(".js-block");
+    const blockWidth = watchesContainerBlock.offsetWidth;
+    const watchesContainerBlockClasses = [...watchesContainerBlock.classList];
+    const blockSpecificClass = watchesContainerBlocksClasses.find((cLass) =>
+      watchesContainerBlockClasses.includes(cLass)
+    );
+    const { leftMarginDenominator, rightMarginDenominator } =
+      watchesContainerSideSpaces[blockSpecificClass];
+    const watchContainerLeftMargin = blockWidth * leftMarginDenominator;
+    const watchContainerRightMargin = blockWidth * rightMarginDenominator;
 
-    container.style.marginRight = watchContainerSideMargin + "px";
-    container.style.marginLeft = watchContainerSideMargin + "px";
+    container.style.marginRight = watchContainerRightMargin + "px";
+    container.style.marginLeft = watchContainerLeftMargin + "px";
   });
 }
